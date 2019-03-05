@@ -22,6 +22,9 @@ def load_test_data(func_name):
     test_filename = os.path.join("tests/tests_data",
                                  test_filename + "_" + func_name + ".ini.pkl")
     output = file_processor.read_file(test_filename)
+    #file_processor = PickleFileProcessor() 
+    #test_filename = 'tests/tests_data/test_hw_01_calcadv.ini.pkl' 
+    #output = file_processor.read_file('tests/tests_data/test_hw_01_det.ini.pkl')
     return output
 
 
